@@ -3,7 +3,7 @@ import { Artwork } from "../components/ArtworkPage";
 export const artworks: Artwork[] = [
   {
     id: 1,
-    imageUrl: "/images/saint.png",
+    imageUrl: "/images/saint.webp",
     title: "ST. TRAUMA",
     description: "The shame, the repressed memories, the victim blaming.",
     authorNote: "I am in this picture and I do not like it.",
@@ -12,7 +12,7 @@ export const artworks: Artwork[] = [
   },
   {
     id: 2,
-    imageUrl: "/images/dead.png",
+    imageUrl: "/images/dead.webp",
     title: "DEAD INSIDE",
     description: "Being happy is a choice.",
     authorNote: "An artist creates not out of suffering but out of love.",
@@ -21,7 +21,7 @@ export const artworks: Artwork[] = [
   },
   {
     id: 3,
-    imageUrl: "/images/grief.png",
+    imageUrl: "/images/grief.webp",
     title: "GOOD GRIEF",
     description: "Grief is the only constant force in our lives.",
     authorNote: "She stalked me for two months and wanted to 'take over' my favourite places and hobbies.",
@@ -30,7 +30,7 @@ export const artworks: Artwork[] = [
   },
   {
     id: 4,
-    imageUrl: "/images/games.png",
+    imageUrl: "/images/games.webp",
     title: "PLAYING GAMES",
     description: "Stop playing their games.",
     authorNote: "The autism diagnosis was more of a relief than anything.",
@@ -39,7 +39,7 @@ export const artworks: Artwork[] = [
   },
   {
     id: 5,
-    imageUrl: "/images/inflammation.png",
+    imageUrl: "/images/inflammation.webp",
     title: "EAR/DRUM",
     description: "Ah, that sticky and oily feeling of isolation and betrayal.",
     authorNote: "I had double otitis that summer.",
@@ -48,7 +48,7 @@ export const artworks: Artwork[] = [
   },
   {
     id: 6,
-    imageUrl: "/images/fire.png",
+    imageUrl: "/images/fire.webp",
     title: "FIREBREAK",
     description: "This is the year of death.",
     authorNote: "I woke up at 4AM to see if the fire reached me and my cat.",
@@ -57,7 +57,7 @@ export const artworks: Artwork[] = [
   },
   {
     id: 7,
-    imageUrl: "/images/kiss.png",
+    imageUrl: "/images/kiss.webp",
     title: "THE KISS",
     description: "Miraculously, she's back.",
     authorNote: "She told me she loved me.",
@@ -66,7 +66,7 @@ export const artworks: Artwork[] = [
   },
   {
     id: 8,
-    imageUrl: "/images/love.png",
+    imageUrl: "/images/love.webp",
     title: "COMING ALIVE",
     description: "Some embraces are more meaningful than others.",
     authorNote: "She lied.",
@@ -75,7 +75,7 @@ export const artworks: Artwork[] = [
   },
   {
     id: 9,
-    imageUrl: "/images/innocence.png",
+    imageUrl: "/images/innocence.webp",
     title: "PREMONITION",
     description: "You saw it and yet you did not react.",
     authorNote: "Three days before disaster.",
@@ -84,7 +84,7 @@ export const artworks: Artwork[] = [
   },
   {
     id: 10,
-    imageUrl: "/images/abuse.png",
+    imageUrl: "/images/abuse.webp",
     title: "CRY BETTER NEXT TIME",
     description: "An eye is stronger than you think.",
     authorNote: "It was just a Christmas decoration.",
@@ -93,7 +93,7 @@ export const artworks: Artwork[] = [
   },
   {
     id: 11,
-    imageUrl: "/images/strength.png",
+    imageUrl: "/images/strength.webp",
     title: "POUR YOUR MISERY DOWN ON ME",
     description: "People keep saying I have a strong back.",
     authorNote: "I hate it when people keep saying I have a strong back.",
@@ -102,7 +102,7 @@ export const artworks: Artwork[] = [
   },
   {
     id: 12,
-    imageUrl: "/images/darkness.png",
+    imageUrl: "/images/darkness.webp",
     title: "TRUE DARKNESS",
     description: "The idea for this exhibition was once entirely different.",
     authorNote: "She died.",
@@ -111,7 +111,7 @@ export const artworks: Artwork[] = [
   },
   {
     id: 13,
-    imageUrl: "/images/bubble.png",
+    imageUrl: "/images/bubble.webp",
     title: "CRYING LIGHTNING",
     description: "Please pop the balloon already.",
     authorNote: "The person in this picture does not exist.",
@@ -120,7 +120,7 @@ export const artworks: Artwork[] = [
   },
   {
     id: 14,
-    imageUrl: "/images/fingers.png",
+    imageUrl: "/images/fingers.webp",
     title: "THE ACT OF LETTING GO",
     description: "Healing oneself is a violent act.",
     authorNote: "I'll gladly bite down on these fingers.",
@@ -129,7 +129,7 @@ export const artworks: Artwork[] = [
   },
   {
     id: 15,
-    imageUrl: "/images/monaxia.png",
+    imageUrl: "/images/monaxia.webp",
     title: "Η ΜΟΝΑΞΙΑ ΜΟΥ",
     description: "One kiss is all it takes.",
     authorNote: "To God, our hearts are nothing more than toys in the palm of her hand.",
