@@ -1,0 +1,260 @@
+/*
+  ArtworkPage.module.css
+  Mobile-first spacing cleanup
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* ─── 1. Design tokens ──────────────────────────────────────────────────────── */
+.page {
+    /* Colors */
+    --color-bg: #0E0E0D;
+    --color-surface: #305560;
+    --color-text-primary: #F7B63D;
+    --color-text-secondary: #FFFFFF;
+    --color-accent: ;
+    --color-border: ;
+
+    /* Swiper arrow overrides */
+    --swiper-navigation-color: currentColor;
+    --swiper-navigation-size: 18px;
+
+    /* Swiper thumb active border */
+    --thumb-active-border: 2px solid var(--color-accent);
+    --thumb-active-border-radius: 10px;
+
+    /* Typography */
+    --font-display: "Inter", sans-serif;
+    --font-body: "Inter", sans-serif;
+    --size-title: 46px;
+    --weight-title: 700;
+    --size-description: 28px;
+    --size-author-label: 20px;
+    --size-author-body: 20px;
+    --line-height-body: 1.6;
+
+    /* Spacing */
+    --spacing-page-h: 20px;
+    --spacing-page-top: 40px;
+    --spacing-page-bottom: 40px;
+    --spacing-section-gap: 18px;
+    --spacing-content-gap: 14px;
+    --spacing-block-gap: 12px;
+
+    /* Artwork image */
+    --image-aspect-ratio: 1:1.414;
+    --image-border-radius: 0px;
+    --image-object-fit: cover;
+
+    /* Author's note */
+    --note-border-radius: 14px;
+    --note-padding: 14px;
+
+    /* Spotify */
+    --spotify-border-radius: 14px;
+
+    /* Thumbnail gallery */
+    --gallery-height: 74px;
+    --gallery-bg: ;
+    --gallery-thumb-size: 52px;
+    --gallery-thumb-radius: 8px;
+    --gallery-gap: 8px;
+}
+
+
+/* ─── 2. Page shell ─────────────────────────────────────────────────────────── */
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    background-color: var(--color-bg);
+    color: var(--color-text-primary);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+    padding:
+        var(--spacing-page-top) var(--spacing-page-h) calc(var(--spacing-page-bottom) + env(safe-area-inset-bottom, 0));
+    box-sizing: border-box;
+    gap: var(--spacing-section-gap);
+}
+
+
+/* ─── 3. Main Swiper ────────────────────────────────────────────────────────── */
+.mainSwiper {
+    width: 100%;
+    overflow: visible;
+}
+
+
+.mainSwiper :global(.swiper-button-prev),
+.mainSwiper :global(.swiper-button-next) {
+    width: 46px;
+    height: 46px;
+    margin-top: -17px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+    border-radius: 6;
+}
+
+.mainSwiper :global(.swiper-button-prev) {
+    left: 8px;
+}
+
+.mainSwiper :global(.swiper-button-next) {
+    right: 8px;
+}
+
+.mainSwiper :global(.swiper-button-prev)::after,
+.mainSwiper :global(.swiper-button-next)::after {
+    font-size: var(--swiper-navigation-size);
+    font-weight: 700;
+}
+
+.imageWrapper {
+    width: 100%;
+    aspect-ratio: var(--image-aspect-ratio);
+    overflow: hidden;
+    border-radius: var(--image-border-radius);
+}
+
+.artworkImage {
+    width: 100%;
+    height: 100%;
+    object-fit: var(--image-object-fit);
+    display: block;
+}
+
+
+/* ─── 4. Text content ───────────────────────────────────────────────────────── */
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-content-gap);
+    padding: 0;
+    margin: 0;
+}
+
+.title {
+    font-family: var(--font-display);
+    font-size: var(--size-title);
+    font-weight: var(--weight-title);
+    color: var(--color-text-primary);
+    margin: 0;
+    line-height: 1.1;
+}
+
+.description {
+    font-size: var(--size-description);
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-body);
+    margin: 0;
+}
+
+.translation {
+    font-size: var(--size-description);
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-body);
+    margin: 0;
+    font-style: italic;
+}
+
+/* ─── 5. Author's note ──────────────────────────────────────────────────────── */
+.authorNote {
+    border-radius: var(--note-border-radius);
+    overflow: hidden;
+    margin: 0;
+}
+
+.authorNoteToggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: var(--note-padding);
+    background: var(--color-surface);
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: var(--size-author-label);
+    color: var(--color-text-secondary);
+    text-align: left;
+}
+
+.authorNoteToggle span {
+    flex: 1;
+}
+
+.chevron {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.authorNoteBody {
+    overflow: hidden;
+}
+
+.authorNoteBody p {
+    padding: var(--note-padding);
+    margin: 0;
+    font-size: var(--size-author-body);
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-body);
+    background: var(--color-surface);
+    font-weight: 700;
+}
+
+
+/* ─── 6. Spotify embed ──────────────────────────────────────────────────────── */
+.spotifyWrapper {
+    width: 100%;
+    border-radius: var(--spotify-border-radius);
+    overflow: hidden;
+    margin: 0;
+}
+
+.spotifyEmbed {
+    display: block;
+    width: 100%;
+    border: none;
+    margin: 0;
+}
+
+
+/* ─── 7. Thumbnail gallery Swiper ───────────────────────────────────────────── */
+.thumbSwiper {
+    width: 100%;
+    height: var(--gallery-height);
+    background-color: var(--gallery-bg);
+    border-top: 1px solid var(--color-border);
+    margin-top: auto;
+    padding: 10px 0 0;
+    box-sizing: border-box;
+}
+
+.thumbSwiper :global(.swiper-wrapper) {
+    align-items: center;
+}
+
+.thumbSlide {
+    width: var(--gallery-thumb-size) !important;
+    height: var(--gallery-thumb-size);
+    margin-right: var(--gallery-gap) !important;
+    border-radius: var(--gallery-thumb-radius);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.thumbSlide:global(.swiper-slide-thumb-active) {
+    outline: var(--thumb-active-border);
+    outline-offset: 0;
+    border-radius: var(--thumb-active-border-radius);
+}
+
+.galleryThumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
