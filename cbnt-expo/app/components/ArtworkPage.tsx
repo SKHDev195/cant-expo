@@ -136,7 +136,7 @@ export default function ArtworkPage({
             width="100%"
             height="152"
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"
+            loading="eager"
             title={`Spotify player for ${artwork.title}`}
           />
         </div>
